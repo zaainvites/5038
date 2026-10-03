@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daanish & Adeena — Nikah Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="music-toggle" id="musicToggle" aria-label="Toggle music">♫</div>
+
+  <main>
+    <!-- Opening -->
+    <section class="opening" id="opening">
+      <img src="assets/cover.png" alt="Nikah invitation cover" class="cover-img">
+      <button class="open-btn" id="openInvite">Tap to Open</button>
+    </section>
+
+    <!-- Sequential video/visual moments -->
+    <section class="video-sequence">
+      <div class="video-slide active">
+        <video class="invite-video" muted playsinline preload="metadata">
+          <source src="assets/video-01.mp4" type="video/mp4">
+        </video>
+        <div class="video-fallback">Add <b>video-01.mp4</b> to the assets folder</div>
+      </div>
+
+      <div class="video-slide">
+        <video class="invite-video" muted playsinline preload="metadata">
+          <source src="assets/video-02.mp4" type="video/mp4">
+        </video>
+        <div class="video-fallback">Add <b>video-02.mp4</b> to the assets folder</div>
+      </div>
+
+      <div class="video-slide">
+        <video class="invite-video" muted playsinline preload="metadata">
+          <source src="assets/video-03.mp4" type="video/mp4">
+        </video>
+        <div class="video-fallback">Add <b>video-03.mp4</b> to the assets folder</div>
+      </div>
+    </section>
+
+    <section class="date-reveal section">
+      <p class="eyebrow">THE DATE</p>
+      <h2>Our day is almost here</h2>
+      <div class="date-card">
+        <div><span id="day">24</span><small>DAY</small></div>
+        <div><span>11</span><small>MONTH</small></div>
+        <div><span>2026</span><small>YEAR</small></div>
+      </div>
+      <p class="script">Scratch to reveal the date</p>
+    </section>
+
+    <section class="story section">
+      <p class="eyebrow">WITH LOVE</p>
+      <p class="intro">Join us for an evening of love, laughter, duas, and unforgettable memories as we begin our forever.</p>
+      <div class="names">
+        <p>YOU ARE INVITED TO THE</p>
+        <h1>NIKKAH CEREMONY</h1>
+        <p class="small">of</p>
+        <div class="couple">Daanish <span>&amp;</span> Adeena</div>
+      </div>
+    </section>
+
+    <section class="quote section">
+      <div class="arch">
+        <p>“And We created you in pairs.”</p>
+        <small>— Surah An-Naba 78:8</small>
+      </div>
+    </section>
+
+    <section class="timeline section">
+      <p class="eyebrow">THE CELEBRATION</p>
+      <h2>Wedding Timeline</h2>
+      <div class="timeline-list">
+        <article><time>06:00 PM</time><h3>Guest Arrival</h3><p>Welcome drinks & warm greetings</p></article>
+        <article><time>06:30 PM</time><h3>Bride Entrance</h3><p>A beautiful beginning to the evening</p></article>
+        <article><time>07:30 PM</time><h3>Salat al Isha</h3><p>Prayer & blessings</p></article>
+        <article><time>08:30 PM</time><h3>Buffet Opening</h3><p>Dinner & celebration</p></article>
+        <article><time>10:00 PM</time><h3>Let the Fun Begin</h3><p>Music, memories & festivities</p></article>
+      </div>
+    </section>
+
+    <section class="countdown section">
+      <p class="eyebrow">COUNTING DOWN</p>
+      <h2>The Celebration Begins</h2>
+      <div class="counter">
+        <div><b id="days">00</b><span>Days</span></div>
+        <div><b id="hours">00</b><span>Hours</span></div>
+        <div><b id="minutes">00</b><span>Minutes</span></div>
+        <div><b id="seconds">00</b><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <p class="eyebrow">OUR MOMENTS</p>
+      <h2>Made of memories</h2>
+      <div class="gallery-grid">
+        <img src="assets/photo-01.jpg" alt="Couple memory">
+        <img src="assets/photo-02.jpg" alt="Couple memory">
+        <img src="assets/photo-03.jpg" alt="Couple memory">
+        <img src="assets/photo-04.jpg" alt="Couple memory">
+      </div>
+    </section>
+
+    <section class="dress section">
+      <p class="eyebrow">DRESS CODE</p>
+      <h2>Traditional Pakistani Attire</h2>
+      <p>We kindly invite our guests to dress in soft pastel shades.</p>
+      <div class="swatches"><i></i><i></i><i></i><i></i></div>
+      <p class="note">Please avoid beige, reserved for the bride and groom.</p>
+    </section>
+
+    <section class="rsvp section">
+      <p class="eyebrow">KINDLY RESPOND</p>
+      <h2>Will you join us?</h2>
+      <p>We would be delighted to celebrate this beautiful evening with you.</p>
+      <a class="rsvp-btn" href="#rsvp">Confirm Your Attendance</a>
+    </section>
+
+    <footer>
+      <p>Daanish &amp; Adeena</p>
+      <small>Designed with love</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
